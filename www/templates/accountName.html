@@ -1,0 +1,26 @@
+<ion-view view-title="Account Management">
+  <ion-content>
+    <form ng-submit="accountChangeName()">
+      <div class="list">  
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Change Your First Name:</span>
+			<input type="text" placeholder="E.g.Juan" ng-model="changeData.firstname">
+		  </label>				  
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Change Your Last Name:</span>
+			<input type="text" placeholder="E.g.Dela Cruz" ng-model="changeData.surname">
+		  </label>			  
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Reason for changing your name:</span>
+			<input type="text" placeholder="E.g. I mispelled my name" ng-model="changeData.reason">
+		  </label>				  
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" ng-click = "accountChangeName()">Send Account Name Proposal</button>
+        </label>
+	  </div>
+    </form>
+
+  </ion-content>
+</ion-view>
+
+

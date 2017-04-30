@@ -1,0 +1,386 @@
+/* Empty. Add your own CSS if you like */
+
+/* Empty. Add your own CSS if you like */
+
+#loginLogo{
+  width:25%;
+  max-width: 150px;
+  margin: 10px auto;
+}
+.scroll{
+  
+}
+.inputTable{
+  width:95%;
+  margin:10px auto;
+}
+ion-item h5{
+  display: inline-block;
+}
+ion-content{
+  margin-bottom: 5rem;
+}
+#logo{
+  width:10%;
+  min-width: 60px;
+}
+#sidebarLogo{
+  width:25%;
+}
+.leftSideBar{
+  padding-left: 30px;
+  border-bottom: 3px solid #ccc ;
+}
+
+.icon{
+  display: inline-block;
+}
+.logout {
+  border-top:3px solid #ccc;
+}
+
+
+
+.label{
+  display: table;
+  margin:0.5rem auto;
+  
+  font-weight: bold;
+  
+}
+
+.inputTable .input{
+  border: 3px solid green;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin:auto;
+  height: 2rem;
+  width: 12rem;
+  
+}
+
+.sbutton{
+  width: 12rem;
+  height: 2rem;
+  border-radius: 5px;
+  margin:0 auto;
+  font-weight: bold;
+  display:table;
+  margin-top: 20px;
+}
+
+
+.radioLabel{
+ 
+  font-weight: bold;
+}
+.inputTable .radioInput{
+  height:1rem;
+  width:1rem;
+  margin: 0.5rem;
+}
+ion-item .sidebarLabel{
+  overflow: visible;
+}
+
+.scroll-content{
+  overflow-y: scroll;
+}
+
+.popup-body{
+  text-align: center;
+}
+
+
+.text-center {
+    margin-top: 3rem;
+}
+
+.item .helpTitle{
+  white-space: normal;
+  text-align: center;
+}
+.item .helpContent{
+  margin-top: 1rem;
+  white-space: normal;
+  text-align: justify;
+}
+.item .helpImage{
+  width: 100%;
+}
+
+
+
+/*Loading Spinner*/
+/*html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+*/
+
+
+.spinner {
+  -webkit-animation: rotator 1.4s linear infinite;
+          animation: rotator 1.4s linear infinite;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+
+@keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+  
+
+
+/*Maps*/
+
+.scroll {
+  height: 100%; }
+
+#map {
+  width: 100%;
+  height: 100%; 
+/*  filter: invert(100%); */ 
+  }
+  
+
+#display-scroll{
+width: 100%; 
+height: 100%
+}  
+
+#leader-scroll{
+width: 100%; 
+height: 100%
+}  
+
+#pac-input {
+  background-color: #f1f1f1;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+   border: 2px solid #428a45; 
+  width: 80%;
+  margin-top: 5px;
+}
+
+#details {
+/* 	filter: invert(100%); */
+}
+.overallSum{
+    height: 35px;
+    width: 35px;
+}
+
+.ammenitySum{
+  border: 10px solid #428a45;
+    border-radius: 10px;
+/*  height: 80%;
+  width: 80%; */
+  height:128px;
+  width:128px;
+}
+
+.ammenityReport{
+  border: 2px solid #000000;
+  height: 40px;
+  width: 40px;
+}
+
+
+.ammenityReportLeader{
+  border: 2px solid #000000;
+  height: 40px;
+  width: 40px;
+}
+
+
+.pwd-green{
+	background-color: #428a45;
+	color: white;
+}
+
+.pwd-green:active{
+	background-color: #428a45;
+	color: white;
+}
+
+
+.pwd-red{
+	background-color: #aa0000;
+	color: white;
+}
+
+.pwd-navy {
+	background-color:#EAEEEA;
+	color:black;
+}
+
+.pwd-blue{
+	background-color:#000caa;
+	color:white;	
+}
+.ammenityButton{
+      font-size: 12px;
+}
+
+.indicator{
+   margin-left : 80%;
+     display:none;
+}
+
+
+
+#overallUpButton{
+  height:64px;
+  width:64px;
+}
+
+#overallDownButton{
+  margin-top:9px;
+  margin-left:20px;
+  height:64px;
+  width:64px;
+}
+
+#centerAgent{
+  margin-top:3px;
+  margin-right:5.5px;
+}
+
+.popover {
+	height: 8.5%;
+	width: 28%;
+
+}
+
+.popoverText{
+    margin-top: 7%;
+}
+
+.filterText {
+      font-size: 12px;
+}
+
+.rightThumb {
+	margin-left:55px;
+	
+}
+
+.placeLeader	 {
+	
+	
+}
+
+#thumbsLeaderUp {
+	margin-left : 62.5%
+	
+}
+
+#thumbsLeaderDown {
+	
+	
+}
+
+#overallUpIconLeader{
+	
+	
+}
+
+#overallDownIconLeader{
+	margin-left:28%;
+	
+}
+
+#overallDownRatingLeader{
+	margin-left:28%;	
+	
+}
+
+#overallUpIconLeader{
+	margin-right:28%;
+	
+}
+
+#overallUpRatingLeader{
+	margin-right:28%;	
+	
+}
+#thumbsLeaderBox
+{
+	margin-top:5%;
+}
+
+.buttonPad{
+	visibility: hidden;
+}

@@ -1,0 +1,27 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Viewing Admin Proposal </h1>
+    <div class="buttons">
+      <button class="button button-primary" ng-click="closePromote()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+		<div class="list">
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">First Name</span>
+			<h2 id = "itemFirstName"> {{decode(currentInfoFirstName)}} </h2>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Last Name</span>
+			<h2 id = "itemLastName"> {{decode(currentInfoLastName)}} </h2>
+		  </label>		
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Reason</span>
+			<h2> {{decode(currentInfoReason)}} </h2>
+		  </label>		  	  	  
+	  <label class = "item" id = "claimButton">
+		  <button ng-click = "approvePromote()" class="button button-block button-positive">Approve Proposal</button>	  
+		  <label><button ng-click = "rejectPromote()" class="button button-block button-positive">Delete Item</button></label>			  
+	  </label>
+  </ion-content>
+</ion-modal-view>

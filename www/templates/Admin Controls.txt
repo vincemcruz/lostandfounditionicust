@@ -1,0 +1,32 @@
+<ion-view view-title="Admin Controls">
+  <ion-content>
+	<div class="list">
+	  <label class="item item-input item-select">
+		<div class="input-label">
+		  Show Only: 
+		</div>
+		<select>
+		  <option selected>Lost & Found Items</option>
+		  <option>Lost Items</option>
+		  <option>Found Items</option>
+		</select>
+	  </label>
+
+	  <div class="item item-divider">
+		Items: 
+	  </div>	
+      <ion-list>
+      <ion-item ng-repeat="playlist in item" href="#/app/playlists/{{playlist.id}}">
+        Person to Contact: <h3>{{playlist.name}}</h3>
+		Contact Number: <p>{{playlist.phone}}</p>
+		Description of Item: <p>{{playlist.desc}}</p>
+		Where: <p>{{playlist.place}}</p>
+		Status of Item: <p>{{playlist.status}}</p>
+	  <button class="button button-block button-positive" type="submit">Approve for Publication</button>
+
+      </ion-item>
+    </ion-list>	
+	</div>
+
+  </ion-content>
+</ion-view>

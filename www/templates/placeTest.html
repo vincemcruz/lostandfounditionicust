@@ -1,0 +1,39 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Viewing Registered Item</h1>
+    <div class="buttons">
+      <button class="button button-primary" ng-click="closeItem()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+				<!-- Available -->
+					<div class='item item-divider'>Amenities Available:</div>  
+					  <div class='item item-text-wrap'>
+						<div class="row">
+							<div class='col' ><img id = "display_stairs"  class = 'ammenityReport' src='./img/stairs.png' alt='stairs' ng-click="showPopover($event, 'Stairs')"/> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('stairs', 'green')"/> </div>
+							<div class='col' ><img id = "display_walkway"  class = 'ammenityReport' src='./img/walkway.png' alt='walkway' ng-click="showPopover($event, 'Walkway')"/> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('walkway', 'green')"/></div>
+							<div class='col' ><img id = "display_corridors"  class = 'ammenityReport' src='./img/corridors.png' alt='corridors' ng-click="showPopover($event, 'Corridors')"/> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('corridors', 'green')"/></div>
+							<div class='col' ><img id = "display_doorsEntrance"  class = 'ammenityReport' src='./img/doorsEntrance.png' alt='doorsEntrance' ng-click="showPopover($event, 'Doors/Entrance')"/> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('doorsEntrance', 'green')"/></div>
+						
+						</div>	
+						<div class="row">
+							<div class='col' ><img id = "display_washroomToilet"  class = 'ammenityReport' src='./img/washroomToilet.png' alt='washroomToilet' ng-click="showPopover($event, 'Washroom or Toilet')"/> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('washroomToilet' , 'green')"/></div>						
+							<div class='col' ><img id = "display_liftsElevator"  class = 'ammenityReport' src='./img/liftsElevator.png' alt='liftsElevator' ng-click="showPopover($event, 'Lift/Elevator')"/> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('liftsElevator', 'green')"/></div>
+							<div class='col' ><img id = "display_ramps"  class = 'ammenityReport' src='./img/ramps.png' alt='ramps' ng-click="showPopover($event, 'Ramps')" /> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('ramps', 'green')"/></div>
+							<div class='col' ><img id = "display_parking"  class = 'ammenityReport' src='./img/parking.png' alt='parking' ng-click="showPopover($event, 'Parking')" /> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('parking', 'green')"/></div>
+						</div>							
+						<div class="row">
+							<div class='col' ><img id = "display_switches"  class = 'ammenityReport' src='./img/switches.png' alt='switches' ng-click="showPopover($event, 'Switches')"/> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('switches', 'green')"/></div>
+							<div class='col' ><img id = "display_handrails"  class = 'ammenityReport' src='./img/handrails.png' alt='handrails' ng-click="showPopover($event, 'Handrails')"/> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('handrails', 'green')"/></div>						
+							<div class='col' ><img id = "display_thresholds"  class = 'ammenityReport' src='./img/thresholds.png' alt='thresholds' ng-click="showPopover($event, 'Thresholds')"/> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('thresholds', 'green')"/></div>
+							<div class='col' ><img id = "display_floorFinish" class = 'ammenityReport' src='./img/floorFinish.png' alt='floorFinish' ng-click="showPopover($event, 'Floor  Finish')"/> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('floorFinish', 'green')"/></div>
+						</div>		
+						<div class = "row">
+							<div class='col' ><img id = "display_publicTelephone"  class = 'ammenityReport' src='./img/publicTelephone.png' alt='publicTelephone' ng-click="showPopover($event, 'Public Telephone')"/><img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('publicTelephone', 'green')"/></div>
+							<div class='col' ><img id = "display_drinkingFountains"  class = 'ammenityReport' src='./img/drinkingFountains.png' alt='drinkingFountains' ng-click="showPopover($event, 'Drinking Fountain')"/><img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('drinkingFountains', 'green')"/></div>
+							<div class='col' ><img id = "display_seatingAccommodations" class = 'ammenityReport' src='./img/seatingAccommodations.png' alt='seatingAccommodations' ng-click="showPopover($event, 'Seating Accomodations')"/> <img class = 'ammenityReport' src='./img/blank.png' alt='blank' ng-show = "!isAmenityPresent('seatingAccommodations', 'green')"/></div>		
+							<div class='col' ><img class = 'ammenityReport' src='./img/blank.png' alt='blank' /> </div>									
+						</div>
+				</div>				
+  </ion-content>
+</ion-modal-view>

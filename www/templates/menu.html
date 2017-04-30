@@ -1,0 +1,72 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">LostAndFoundIT</h1>	  
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item class = "item-stable">
+		<b>Hello, {{displayName()}}</b>
+        </ion-item>
+        <ion-item menu-close href="#/app/registeritem">
+         <i class="icon ion-edit"></i> Register an Item 
+        </ion-item>		
+        <ion-item menu-close ng-href="#/app/browse" ng-click="goGeneral()">
+          <i class="icon ion-ios-list"></i> Item List
+        </ion-item>
+        <ion-item menu-close ng-href="#/app/playlists" ng-click="goPersonal()">
+          <i class="icon ion-ios-list-outline"></i> Your Items
+        </ion-item>
+        <ion-item class = "item-stable">
+		<b>Account Settings</b>
+        </ion-item>         
+        <ion-item menu-close href="#/app/account">
+          <i class="icon ion-ios-telephone-outline"></i> Change Contact Number
+        </ion-item>		
+        <ion-item menu-close href="#/app/accountName">
+          <i class="icon ion-ios-person-outline"></i>  Change Information
+        </ion-item>	
+        <div ng-hide = "isAdmin">
+			<ion-item menu-close href="#/app/adminRequest">
+			  <i class="icon ion-paper-airplane"></i>  Request to be an Admin
+			</ion-item>		
+ 		</div> 			
+        <ion-item menu-close  ng-href="#/app/login" ng-click="logout()">
+          <i class="icon ion-power"></i> Logout
+        </ion-item>  
+         <div ng-show = "isAdmin">
+	        <ion-item class = "item-stable">
+			<b>Admin Controls</b>
+	        </ion-item>                
+	        <ion-item menu-close ng-href="#/app/admin" ng-click="goAdmin()">
+	          <i class="ion-android-checkmark-circle"></i> Item Approval
+	        </ion-item>	
+	        <ion-item menu-close ng-href="#/app/adminPersonal" ng-click = "showAdminInfoList()">
+			  <i class="icon ion-checkmark-round"></i> Personal Info Proposals
+	        </ion-item>	  		
+ 		</div> 
+         <div ng-show = "isSuperAdmin">
+	        <ion-item class = "item-stable">
+			<b>Super Admin Controls</b>
+	        </ion-item>                
+	        <ion-item menu-close ng-href="#/app/adminPromote" ng-click="showAdminPromoteList()">
+	          <i class="ion ion-android-star-outline"></i> Admin Approval
+	        </ion-item>	 		
+ 		</div>  		
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,92 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Viewing Registered Item (Yours)</h1>
+    <div class="buttons">
+      <button class="button button-primary" ng-click="closeItemPersonal()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+		<div class="list">
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Item Type</span>
+			<h2 id = "itemType"> {{decode(currentType)}} Item </h2>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">First Name</span>
+			<h2 id = "itemFirstName"> {{decode(currentFirstName)}} </h2>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Last Name</span>
+			<h2 id = "itemLastName"> {{decode(currentLastName)}} </h2>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Contact Number:</span>
+			<h2 id = "itemContact"> 0{{currentContact}} </h2>
+		  </label>	
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Description of Found Item</span>
+					<h2 id = "itemDesc"> {{decode(currentDescription)}} </h2>
+		  </label>	  
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Where was it {{currentType}}?</span>
+					<h2 id = "itemLocation"> {{decode(currentLocation)}} </h2>
+		  </label>		
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Item Status: </span>
+					<h2 id = "itemClaim"> {{currentClaim}} </h2>
+		  </label>			  
+		  <form>  
+			  <label class="item">
+				  <label class="item item-input">
+					<textarea placeholder="Comments" ng-model="thread.post" ></textarea>
+				  </label>
+				  <label class="item">
+				  <button class="button button-block button-positive" ng-click="postComment()" >Post Comment</button> 		  
+			      </label>
+			  </label>	 
+		  </form> 
+	  <label class = "item" id = "claimButton">
+		  <button ng-click = "claimItem()" class="button button-block button-positive">Register as Claimed</button>	  
+		  <label><button ng-click = "deleteItem()" class="button button-block button-positive">Delete Item</button></label>			  
+	  </label>
+	<label class="item">	  
+      <ion-list>
+	<div class="item item-divider item-balanced">Comments:</div>	  
+      <ion-item ng-repeat="message in comments">
+	  
+<!-- 		User ID: <h3>{{message.userid}}</h3>
+		User's Name: <h2> {{message.firstname}}  {{message.lastname}}</h2>
+		Message: <p>{{message.message}}</p>	 
+		Date Posted: <p>{{message.posted}}</p> 
+		 -->
+		 
+		<div class="list card">
+
+		  <div class="item item-avatar">
+		    <img src="./img/user.png">
+			<h2>{{decode(message.firstname)}}  {{decode(message.lastname)}} ({{decode(message.userid)}})</h2>
+		  </div>
+
+		  <div class="item item-body">
+		<!--     <img class="full-image" src="delorean.jpg"> -->
+			<p>
+			  {{decode(message.message)}}
+			</p>
+         <div ng-show = "isMine(message)">			
+			<p>
+ 			  <a ng-click = "deleteMine(message)" class="subdued">Delete Comment</a> 
+			</p>
+         </div>	
+			<p>
+			  <a href = "#" class = "subdued">Date Posted: {{decode(message.posted)}}</a>
+			</p>
+		  </div>
+
+		</div>		
+		
+      </ion-item>
+    </ion-list>			  
+
+	</label>		
+  </ion-content>
+</ion-modal-view>

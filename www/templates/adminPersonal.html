@@ -1,0 +1,22 @@
+<ion-view view-title="Personal Information Proposals">
+  <ion-content>
+	<div class="list">  
+	  <div class="item item-divider">
+	   <a ng-click = "showAdminInfoList()"><i class="ion-refresh"></i> Refresh</a>
+	  </div>	
+	  <div class="item item-divider">
+	   Proposals:
+	  </div>	  
+      <ion-list>
+      <ion-item ng-repeat="belong in adminInfoList" ng-click = "setInfoDisplay(belong)">
+		Name: <h3>{{decode(belong.name)}} {{decode(belong.lastname)}}</h3>
+		Proposed Name: <h3>{{decode(belong.namenew)}} {{decode(belong.lastnamenew)}}</h3>	  
+		Reason for Change:  <p>{{decode(belong.reason)}}</p>
+	  <!-- <button class="button button-block button-positive" type="submit">Approve for Publication</button> -->
+
+      </ion-item>
+    </ion-list>	
+	</div>
+
+  </ion-content>
+</ion-view>

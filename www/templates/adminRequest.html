@@ -1,0 +1,18 @@
+<ion-view view-title="Request to be an Admin">
+  <ion-content>
+    <form ng-submit="accountRequestAdmin()">
+      <div class="list">  		  
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Reason for requesting to be Admin:</span>
+			<input type="text" placeholder="E.g. I am a part of the student council" ng-model="promoteData.reason">
+		  </label>				  
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" ng-click = "accountRequestAdmin()">Send Admin Request Proposal</button>
+        </label>
+	  </div>
+    </form>
+
+  </ion-content>
+</ion-view>
+
+

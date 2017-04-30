@@ -1,0 +1,38 @@
+<ion-view view-title="Register Item">
+  <ion-content>
+	<div class="list">
+	  <label class="item item-input item-select">
+		<div class="input-label">
+		  Item Type
+		</div>
+		<select>
+		  <option selected>Lost Item</option>
+		  <option>Found Item</option>
+		</select>
+	  </label>	
+	  <label class="item item-input item-stacked-label">
+		<span class="input-label">First Name</span>
+		<input type="text" placeholder="Juan">
+	  </label>
+	  <label class="item item-input item-stacked-label">
+		<span class="input-label">Last Name</span>
+		<input type="text" placeholder="Dela Cruz">
+	  </label>
+	  <label class="item item-input item-stacked-label">
+		<span class="input-label">Contact Number:</span>
+		<input type="text" placeholder="E.g.09100000000" ng-model="registerData.surname">
+	  </label>	
+	  <label class="item item-input item-stacked-label">
+		<span class="input-label">Description of Item</span>
+		<input type="text" placeholder="eg. Laptop Charger">
+	  </label>	  
+	  <label class="item item-input item-stacked-label">
+		<span class="input-label">Where was it?</span>
+		<input type="text" placeholder="eg. Outside Lab 4">
+	  </label>		  
+	<label class="item">
+	  <button class="button button-block button-positive" type="submit">Register Item</button>
+	</label>	  
+	</div>
+  </ion-content>
+</ion-view>

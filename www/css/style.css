@@ -1,0 +1,192 @@
+/* Empty. Add your own CSS if you like */
+
+/*Maps*/
+
+.scroll {
+  height: 100%; }
+
+#map {
+  width: 100%;
+  height: 100%; 
+/*  filter: invert(100%); */ 
+  }
+  
+
+#display-scroll{
+width: 100%; 
+height: 100%
+}  
+
+#leader-scroll{
+width: 100%; 
+height: 100%
+}  
+
+#pac-input {
+  background-color: #f1f1f1;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+   border: 2px solid #428a45; 
+  width: 80%;
+  margin-top: 5px;
+}
+
+#details {
+/* 	filter: invert(100%); */
+}
+.overallSum{
+    height: 35px;
+    width: 35px;
+}
+
+.ammenitySum{
+  border: 10px solid #428a45;
+    border-radius: 10px;
+/*  height: 80%;
+  width: 80%; */
+  height:128px;
+  width:128px;
+}
+
+#loginLogo{
+  margin-top:2%;
+  margin-bottom:2%;
+}
+
+.ammenityReport{
+  border: 2px solid #000000;
+  height: 40px;
+  width: 40px;
+}
+
+
+.ammenityReportLeader{
+  border: 2px solid #000000;
+  height: 40px;
+  width: 40px;
+}
+
+
+.pwd-green{
+	background-color: #428a45;
+	color: white;
+}
+
+.pwd-green:active{
+	background-color: #428a45;
+	color: white;
+}
+
+
+.pwd-red{
+	background-color: #aa0000;
+	color: white;
+}
+
+.pwd-navy {
+	background-color:#EAEEEA;
+	color:black;
+}
+
+.pwd-blue{
+	background-color:#000caa;
+	color:white;	
+}
+.ammenityButton{
+      font-size: 12px;
+}
+
+.indicator{
+   margin-left : 80%;
+     display:none;
+}
+
+
+
+#overallUpButton{
+  height:64px;
+  width:64px;
+}
+
+#overallDownButton{
+  margin-top:9px;
+  margin-left:20px;
+  height:64px;
+  width:64px;
+}
+
+#centerAgent{
+  margin-top:3px;
+  margin-right:5.5px;
+}
+
+.popover {
+	height:20%;
+	width:16dp;
+
+}
+
+.popoverText{
+    margin-top: 7%;
+}
+
+.filterText {
+      font-size: 12px;
+}
+
+.rightThumb {
+	margin-left:55px;
+	
+}
+
+.placeLeader	 {
+	
+	
+}
+
+#thumbsLeaderUp {
+	margin-left : 62.5%
+	
+}
+
+#thumbsLeaderDown {
+	
+	
+}
+
+#overallUpIconLeader{
+	
+	
+}
+
+#overallDownIconLeader{
+	margin-left:28%;
+	
+}
+
+#overallDownRatingLeader{
+	margin-left:28%;	
+	
+}
+
+#overallUpIconLeader{
+	margin-right:28%;
+	
+}
+
+#overallUpRatingLeader{
+	margin-right:28%;	
+	
+}
+#thumbsLeaderBox
+{
+	margin-top:5%;
+}
+
+.buttonPad{
+	visibility: hidden;
+}

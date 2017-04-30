@@ -1,0 +1,37 @@
+<ion-view view-title="Item Approval">
+  <ion-content>
+	<div class="list">
+	  
+
+	 <div class="list">
+	  <label class="item item-input item-select">
+		<div class="input-label">
+			Show Only:
+		</div>
+		<select ng-model = "choice" ng-change = "changeAdmin()">			
+			<option value = "l" selected>Lost</option>
+			<option value = "f" >Found</option>			
+		</select>		
+	  </label>
+	</div>	  
+	  <div class="item item-divider">
+	   <a ng-click = "showAdminList()"><i class="ion-refresh"></i> Refresh</a>
+	  </div>		
+	  <div class="item item-divider">
+		Items: 
+	  </div>	
+      <ion-list>
+      <ion-item ng-repeat="belong in adminList" ng-click = "setItem(belong, 2)">
+		Description of Item: <h3>{{decode(belong.desc)}}</h3>
+		Where: <p>{{decode(belong.place)}}</p>	  
+<!--         Person to Contact: <p>{{belong.name}}</p>
+		Contact Number: <p>{{belong.phone}}</p> -->
+		Status of Item: <p>{{decode(belong.status)}}</p>
+	  <!-- <button class="button button-block button-positive" type="submit">Approve for Publication</button> -->
+
+      </ion-item>
+    </ion-list>	
+	</div>
+
+  </ion-content>
+</ion-view>

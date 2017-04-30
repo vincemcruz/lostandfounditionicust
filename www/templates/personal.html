@@ -1,0 +1,52 @@
+<ion-view view-title="Your Items">
+  <ion-content>
+	<div class="list">
+<!-- 	  <label class="item item-input item-select">
+		<div class="input-label">
+		  Show Only: 
+		</div>
+		<select>
+		  <option selected>Lost & Found Items</option>
+		  <option>Lost Items</option>
+		  <option>Found Items</option>
+		</select>
+	  </label> -->
+
+<!-- 	  <label>
+		<ion-list>
+		  <ion-radio ng-model="choice" ng-value="'Lost & Found'">Lost & Found</ion-radio>
+		  <ion-radio ng-model="choice" ng-value="'Lost'">Lost</ion-radio>
+		  <ion-radio ng-model="choice" ng-value="'Found'">Found</ion-radio>		  
+		</ion-list>	  
+	  </label> -->
+	
+	 <div class="list">
+	  <label class="item item-input item-select">
+		<div class="input-label">
+			Show Only:
+		</div>
+		<select ng-model = "choice" ng-change = "changePersonal()">			
+			<option value = "l" selected>Lost</option>
+			<option value = "f" >Found</option>			
+		</select>		
+	  </label>
+	</div>	  	
+	  <div class="item item-divider">
+	   <a ng-click = "showPersonalList()"><i class="ion-refresh"></i> Refresh</a>
+	  </div>	  
+	  <div class="item item-divider">
+		Items: 
+	  </div>	
+      <ion-list>
+      <!-- <ion-item ng-repeat="belong in itemV" href="#/app/belongs/{{belong.id}}"> -->
+      <ion-item ng-repeat="belong in ownList" ng-click = "setItem(belong, 1)">	
+		Description of Item: <h3>{{decode(belong.desc)}}</h3>
+		Where: <p>{{decode(belong.place)}}</p>	  
+<!--         Person to Contact: <p>{{belong.name}}</p>
+		Contact Number: <p>{{belong.phone}}</p> -->
+		Status of Item: <p>{{decode(belong.status)}}</p>
+      </ion-item>
+    </ion-list>	
+	</div>
+  </ion-content>
+</ion-view>

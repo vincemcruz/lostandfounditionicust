@@ -1,0 +1,23 @@
+<ion-view>
+  <ion-content>		
+  <ion-header-bar>
+    <h1 class="title">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <br/>
+  <br/>	
+  <form>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Enter your confirmation code</span>
+			<input type="text" ng-model="verify.verifyCode">
+		  </label>
+		  
+        <label class="item">
+          <button class="button button-block button-positive" ng-click="verifyAccount()">Verify Account & Login</button>
+        </label>
+  </form>
+  </ion-content>
+</ion-view>
+"#/app/register"

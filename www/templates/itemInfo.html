@@ -1,0 +1,35 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Viewing Name Proposal </h1>
+    <div class="buttons">
+      <button class="button button-primary" ng-click="closeInfo()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+		<div class="list">
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">First Name</span>
+			<h2 id = "itemFirstName"> {{decode(currentInfoFirstName)}} </h2>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Last Name</span>
+			<h2 id = "itemLastName"> {{decode(currentInfoLastName)}} </h2>
+		  </label>	
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">New First Name</span>
+			<h2 id = "itemFirstName"> {{decode(currentInfoFirstNameNew)}} </h2>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">New Last Name</span>
+			<h2 id = "itemLastName"> {{decode(currentInfoLastNameNew)}} </h2>
+		  </label>		
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Reason</span>
+			<h2> {{decode(currentInfoReason)}} </h2>
+		  </label>		  	  	  
+	  <label class = "item" id = "claimButton">
+		  <button ng-click = "approveInfo()" class="button button-block button-positive">Approve Proposal</button>	  
+		  <label><button ng-click = "rejectInfo()" class="button button-block button-positive">Delete Item</button></label>			  
+	  </label>
+  </ion-content>
+</ion-modal-view>

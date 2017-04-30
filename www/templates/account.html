@@ -1,0 +1,18 @@
+<ion-view view-title="Account Management">
+  <ion-content>
+    <form ng-submit="accountChange()">
+      <div class="list">  
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Change Your Contact Number:</span>
+			<input type="text" placeholder="E.g.09100000000" ng-model="changeData.contact">
+		  </label>				  
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" ng-click = "accountChange()">Change Account Details</button>
+        </label>
+	  </div>
+    </form>
+
+  </ion-content>
+</ion-view>
+
+

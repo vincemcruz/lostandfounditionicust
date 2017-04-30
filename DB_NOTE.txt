@@ -1,0 +1,3 @@
+* Lost and Found Ionic OL is the local copy of the php files used to access the database
+* The default password for the super user (9999999999@ust.edu.ph) is admin123
+* Please get your own server for the database, the application's current host will have its files removed by the time this program is inherited

@@ -1,0 +1,24 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Forgot Password</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeForgot()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doRegister()">
+      <div class="list">				  
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Email (Must be your ust.edu.ph account)</span>
+			<input type="text" placeholder="E.g.000000000@ust.edu.ph" ng-model="forgotData.email">
+		  </label>
+        <label class="item">
+          <button class="button button-block button-positive" ng-click = "retrieveAccount()">Retrieve Account</button>
+        </label>
+        <label class="item">
+          <button class="button button-block button-assertive" ng-click = "closeForgot()">Cancel</button>		  
+        </label>		
+	  </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

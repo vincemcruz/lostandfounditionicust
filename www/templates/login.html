@@ -1,0 +1,36 @@
+<ion-view>
+  <ion-content>		
+  <ion-header-bar>
+    <h1 class="title">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <br/>
+  <br/>	
+    <div class="text-center">
+      <img id="loginLogo" src="img/logo.png"/> </img>
+    </div>  
+  <form>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Email (Must be your ust.edu.ph account)</span>
+			<input type="text" placeholder="E.g.000000000@ust.edu.ph" ng-model="loginData.username">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Password</span>
+          <input type="password" ng-model="loginData.password">
+		  </label>	  
+		  
+        <label class="item">
+          <button class="button button-block button-positive" ng-click="loginAccount()">Log in</button>
+        </label>
+        <label class="item">
+          <button class="button button-block button-calm" ng-click="register()">Register</button>
+        </label>
+        <label class="item">
+          <button class="button button-block button-energized" ng-click="openForgot()">Forgot Password</button>
+        </label>		
+  </form>
+  </ion-content>
+</ion-view>
+"#/app/register"

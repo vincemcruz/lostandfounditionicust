@@ -1,0 +1,44 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Registration</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeRegister()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doRegister()">
+      <div class="list">
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">First Name: </span>
+			<input type="text" placeholder="E.g.Juan" ng-model="registerData.firstname">
+		  </label>	 
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Last Name:</span>
+			<input type="text" placeholder="E.g.Dela Cruz" ng-model="registerData.surname">
+		  </label>		  
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Mobile Number:</span>
+			<input type="text" placeholder="E.g.09100000000" ng-model="registerData.phone">
+		  </label>				  
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Email (Must be your ust.edu.ph account)</span>
+			<input type="text" placeholder="E.g.000000000@ust.edu.ph" ng-model="registerData.email">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Password (Must be atleast 6 characters)</span>
+          <input type="password" ng-model="registerData.password">
+		  </label>	  
+		  <label class="item item-input item-stacked-label">
+			<span class="input-label">Confirm Password</span>
+          <input type="password" ng-model="registerData.passwordRepeat">
+		  </label>			  
+        <label class="item">
+          <button class="button button-block button-positive" ng-click = "registerAccount()">Register Account</button>
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" ng-click = "closeRegister()">Cancel</button>		  
+        </label>		
+	  </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
